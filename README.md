@@ -87,8 +87,8 @@ Le projet est volontairement très simple et ne nécessite pas de JavaScript.
 
 # Captures d'écran de l'application
 
-![presentation](assets/screenshot%20connect.png).
-![presentation](assets/screenshot%20panel.png).
+![presentation](assets/screenshot_connect.png)
+![presentation](assets/screenshot_panel.png)
 
 # Structure des fichiers
 
