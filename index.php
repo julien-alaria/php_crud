@@ -178,7 +178,7 @@ if (isset($_SESSION["user_id"])) {
                 <strong>Role:</strong> <?= htmlspecialchars($result["role"]) ?><br>
             </p>
 
-            <form action="" method="post" style="margin-bottom:5px;">
+            <form action="" method="post">
                 <input type="hidden" name="update-id" value="<?= $result["id"] ?>">
                 <input type="text" name="update-name" value="<?= htmlspecialchars($result["name"]) ?>" required>
                 <input type="email" name="update-email" value="<?= htmlspecialchars($result["email"]) ?>" required>
@@ -187,7 +187,7 @@ if (isset($_SESSION["user_id"])) {
                 <input type="submit" value="Modifier">
             </form>
 
-            <form action="" method="post" onsubmit="return confirm('Voulez-vous vraiment supprimer cet utilisateur ?');">
+            <form action="" method="post">
                 <input type="hidden" name="delete-id" value="<?= $result["id"] ?>">
                 <input type="hidden" name="csrf_token" value="<?= $csrf_token ?>">
                 <input type="submit" value="Supprimer">
